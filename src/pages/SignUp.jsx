@@ -10,7 +10,7 @@ import { Redirect } from "react-router-dom";
 const SignUp = () => {
 
     const dispatch = useDispatch();
-    const [addImage, setAddImage] = useState("http://localhost:3000/assets/user.svg");
+    const [addImage, setAddImage] = useState("/assets/user.svg");
     const [redirect, setRedirect] = useState(false);
     const { id } = useSelector(({ users }) => users.currentUser);
     const { register, formState: { errors }, handleSubmit, reset, setValue, clearErrors } = useForm({ mode: 'onBlur' });

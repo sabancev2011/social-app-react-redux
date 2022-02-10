@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 function Sidebar() {
     let { page } = useParams();
-    let { name, email, img = "http://localhost:3000/../assets/user.svg", id, lastName } = useSelector(({ users }) => users.currentUser)
+    let { name, email, img = "/../assets/user.svg", id, lastName } = useSelector(({ users }) => users.currentUser)
 
 
     return (
