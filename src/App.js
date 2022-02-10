@@ -10,14 +10,14 @@ function App() {
       <div className="pageWrapper">
         <div className="container">
           <div className="contentWrapper">
+            <Route exact path="/" render={() => <Password />} />
             <Route path="/:page" render={() => <Sidebar />} />
             <Route path="/profile/:userId?" render={() => <Profile />} />
             <Route path="/messages/:userId?" render={() => <Messages />} />
             <Route path="/users" render={() => <Users />} />
-            <Route path="/password" render={() => <Password />} />
             <Route path="/sign-up" render={() => <SignUp />} />
             <Route path="/select-user" render={() => <SelectUser />} />
-            <Redirect from="/" to="/password" /> 
+            <Redirect from="/" to="/" />
           </div>
         </div>
       </div>
