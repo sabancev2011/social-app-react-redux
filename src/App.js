@@ -17,7 +17,7 @@ function App() {
             <Route path="/users" render={() => <Users />} />
             <Route path="/sign-up" render={() => <SignUp />} />
             <Route path="/select-user" render={() => <SelectUser />} />
-            <Redirect from="/" to="/" />
+            <Redirect from="/" exact to="/" />
           </div>
         </div>
       </div>
